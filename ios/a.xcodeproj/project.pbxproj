@@ -18,7 +18,6 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* aTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* aTests.m */; };
-		795F9F1423F3299400E85505 /* libCodePush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F9F1123F3295400E85505 /* libCodePush.a */; };
 		795F9F1623F329C500E85505 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F9F1523F329C500E85505 /* libz.tbd */; };
 		80FC715A703502323300A90E /* libPods-a-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDCE31045849F79D91E4200 /* libPods-a-tvOSTests.a */; };
 		8E76A039124CC6C3BACD9765 /* libPods-aTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11BEFA0CF426B8BEF196B0B1 /* libPods-aTests.a */; };
@@ -39,16 +38,16 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "a-tvOS";
 		};
-		795F9F1023F3295400E85505 /* PBXContainerItemProxy */ = {
+		796DB68E23F66A84009C56BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 795F9F0B23F3295400E85505 /* CodePush.xcodeproj */;
+			containerPortal = 796DB68923F66A84009C56BF /* CodePush.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = CodePush;
 		};
-		795F9F1223F3295400E85505 /* PBXContainerItemProxy */ = {
+		796DB69023F66A84009C56BF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 795F9F0B23F3295400E85505 /* CodePush.xcodeproj */;
+			containerPortal = 796DB68923F66A84009C56BF /* CodePush.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F886647B1F4ADB500036D01B;
 			remoteInfo = "CodePush-tvOS";
@@ -77,8 +76,8 @@
 		3EDCE31045849F79D91E4200 /* libPods-a-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-a-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECCDE24173E73C64F1398A3 /* Pods-a-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-a-tvOS/Pods-a-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		75EC18FAEC38946FF602355F /* Pods-a-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-a-tvOSTests/Pods-a-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		795F9F0B23F3295400E85505 /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		795F9F1523F329C500E85505 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		796DB68923F66A84009C56BF /* CodePush.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodePush.xcodeproj; path = "../node_modules/react-native-code-push/ios/CodePush.xcodeproj"; sourceTree = "<group>"; };
 		7AC2B608BB808A8FF2B6F5B2 /* Pods-a.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a.debug.xcconfig"; path = "Target Support Files/Pods-a/Pods-a.debug.xcconfig"; sourceTree = "<group>"; };
 		8C4D05624755F0220EFA6425 /* Pods-a-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-a-tvOSTests/Pods-a-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9086287F328D72C919792F36 /* libPods-a-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-a-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +101,6 @@
 			files = (
 				795F9F1623F329C500E85505 /* libz.tbd in Frameworks */,
 				1837DB30BD455F33C01C8FF0 /* libPods-a.a in Frameworks */,
-				795F9F1423F3299400E85505 /* libCodePush.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,11 +183,11 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		795F9F0C23F3295400E85505 /* Products */ = {
+		796DB68A23F66A84009C56BF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				795F9F1123F3295400E85505 /* libCodePush.a */,
-				795F9F1323F3295400E85505 /* libCodePush.a */,
+				796DB68F23F66A84009C56BF /* libCodePush.a */,
+				796DB69123F66A84009C56BF /* libCodePush.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -197,7 +195,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				795F9F0B23F3295400E85505 /* CodePush.xcodeproj */,
+				796DB68923F66A84009C56BF /* CodePush.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -315,7 +313,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -347,8 +345,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 795F9F0C23F3295400E85505 /* Products */;
-					ProjectRef = 795F9F0B23F3295400E85505 /* CodePush.xcodeproj */;
+					ProductGroup = 796DB68A23F66A84009C56BF /* Products */;
+					ProjectRef = 796DB68923F66A84009C56BF /* CodePush.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -362,18 +360,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		795F9F1123F3295400E85505 /* libCodePush.a */ = {
+		796DB68F23F66A84009C56BF /* libCodePush.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCodePush.a;
-			remoteRef = 795F9F1023F3295400E85505 /* PBXContainerItemProxy */;
+			remoteRef = 796DB68E23F66A84009C56BF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		795F9F1323F3295400E85505 /* libCodePush.a */ = {
+		796DB69123F66A84009C56BF /* libCodePush.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCodePush.a;
-			remoteRef = 795F9F1223F3295400E85505 /* PBXContainerItemProxy */;
+			remoteRef = 796DB69023F66A84009C56BF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -641,6 +639,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = aTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -661,6 +660,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = aTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -682,6 +682,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = a/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -701,6 +702,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = a/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -727,6 +729,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "a-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -755,6 +758,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "a-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -782,6 +786,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "a-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -809,6 +814,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "a-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
